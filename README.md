@@ -37,8 +37,13 @@
 >>
 
 ## 3. 运行程序
-> 非debug模式，直接运行  python clients_main.py [-m [module [-f [function]]]] 
+> 非debug模式
 >
+> 直接运行  
+>  ```python
+>  python  clients _main.py [-m [module [-f [function]]]] 
+>  ```
+ 
 > debug模式：
 >>
 >>先启动appium server
