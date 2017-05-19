@@ -58,5 +58,5 @@
 >>>
 >>>xcodebuild build-for-testing test-without-building -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 'id=<udid>' -configuration Debug -xcconfig Configurations/ProjectSettings.xcconfig
 >
->遇到问题，可先重启手机，再重启服务和回话
+>遇到问题，可先重启手机，再重启服务和回会话
 
