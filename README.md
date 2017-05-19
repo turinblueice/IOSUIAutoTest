@@ -37,21 +37,21 @@
 >>
 
 ## 3. 运行程序
-> 非debug模式，安装android运行方式进行
+> 非debug模式，直接运行  python clients_main.py [-m [module [-f [function]]]] 
 >
 > debug模式：
 >>
->>需先启动appium server
+>>先启动appium server
 >>
 >>然后create session #该会话需未指定webDriverAgentUrl
 >>
->>等待appium log显示与手机进行通信之后，再编译WebDriverAgent
+>>等待appium log显示与手机进行通信之后，再安装启动WebDriverAgent， 默认端口8100进行通信
 >>>
 >>>xcodebuild -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 'id=<udid>' test
 >>>
->>>or
+>>>or更多详细信息
 >>>
 >>>xcodebuild build-for-testing test-without-building -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 'id=<udid>' -configuration Debug -xcconfig Configurations/ProjectSettings.xcconfig
 >
->如遇到无法正常启动app的情况，尝试将appium sever重启，若还不可以，将手机重启。
+>遇到问题，可先重启手机，再重启服务和回话
 
