@@ -1,9 +1,9 @@
 ## 1. 准备工作
 
+> 1. 安装
 
-> 程序需要将ipa文件集成到手机上，需安装ideviceinstaller和ios-deploy
-> 1. 使用命令行工具安装
-
+>> 安装ideviceinstaller和ios-deploy
+>>
 >> brew install libimobiledevice --HEAD  #先安装依赖
 >> 
 >> 如果遇到  'Could not connect to lockdownd, error code -21' 错误，运行
@@ -21,19 +21,20 @@
 
 ## 2. 安装环境
 > ### 检测设备信息
-> #### 如果iOS device低于9.3，Appium版本不要高于1.6，则可正常启动;
+> #### 如果iOS device低于9.3，Appium版本不要高于1.6;
 >
 > #### 如果ios device高于9.3，需升级以下版本：
 >
 >> Appium version - 1.6.4
 >>
->> Appium Client - 1.0.1
+>> Appium Client - 1.0.1 beta
 >>
 >> Mac OSX version - 10.12.1
 >>
+>> Xcode - 8.0
+>>
 >> 按照官方文档安装WDA https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md
 >>
->> 注意team id 需找我申请
 
 ## 3. 运行程序
 > 非debug模式，安装android运行方式进行
