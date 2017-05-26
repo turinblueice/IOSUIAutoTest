@@ -117,7 +117,8 @@ class MultiClientsBaseTest(object):
                     'noReset': True if config_model.get('default_capabilities', 'no_reset') == 'True' else False,
                     'autoAcceptAlerts': True if config_model.get('default_capabilities',
                                                                  'auto_accept_alerts') == 'True' else False,
-                    'waitForAppScript': config_model.get('default_capabilities', 'wait_for_app_script')
+                    'waitForAppScript': config_model.get('default_capabilities', 'wait_for_app_script'),
+                    'webDriverAgentUrl': config_model.get('default_capabilities', 'webDriverAgentUrl')
 
                 })
 
