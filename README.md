@@ -1,37 +1,48 @@
 ## 1. 准备工作
 
-> 1. 安装
+> 1. 安装依赖
 
->> 安装ideviceinstaller和ios-deploy
+>> mac下需安装ideviceinstaller和ios-deploy，以获得设备命令行操作的支持
 >>
->> brew install libimobiledevice --HEAD  #先安装依赖
+>> 
+>>  ```bash
+>>
+>>  brew install libimobiledevice --HEAD  #先安装依赖
+>>
+>> ```
 >> 
 >> 如果遇到  'Could not connect to lockdownd, error code -21' 错误，运行
+>> ```bash 
 >> sudo chmod -R 777 /var/db/lockdown/
 >> 
 >> brew install ideviceinstaller
 >> 
 >> npm install -g ios-deploy
+>> ```
 
->2. 检测
+>2. 检测安装
 
->> device_id -l #将真机链接到电脑，输入该命令，如果出现设备id，则说明安装成功
+>>```bash
+>> idevice_id -l #将真机链接到电脑，获取移动设备的udid，则工具安装成功
 >>
->> deviceinfo -u _udid_ #会出现该设备的信息
+>> ideviceinfo #获取移动设备的详细信息
+>>```
+>>
 
-## 2. 安装环境
+
+## 2. 运行／开发环境配置
+>
 > ### 检测设备信息
-> #### 如果iOS device低于9.3，Appium版本不要高于1.6;
 >
-> #### 如果ios device高于9.3，需升级以下版本：
+> 若IOS设备系统版本高于9.3，需做以下升级
 >
->> Appium version - 1.6.4
+>> Appium升级至1.6.4及以上
 >>
->> Appium Client - 1.0.1 beta
+>> Appium Client升级至1.0.1 beta及以上
 >>
->> Mac OSX version - 10.12.1
+>> Mac OSX升级至10.12.0及以上
 >>
->> Xcode - 8.0
+>> Xcode升级到8.0及以上
 >>
 >> 按照官方文档安装WDA https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md
 >>
@@ -43,12 +54,12 @@
 >  ```python
 >  python  clients _main.py [-m [module [-f [function]]]] 
 >  ```
- 
+>
 > debug模式：
 >>
 >>先启动appium server
 >>
->>然后create session #该会话需未指定webDriverAgentUrl
+>>然后创建appium会话（create session） #该会话需未指定webDriverAgentUrl
 >>
 >>等待appium log显示与手机进行通信之后，再安装启动WebDriverAgent， 默认端口8100进行通信
 >>>
