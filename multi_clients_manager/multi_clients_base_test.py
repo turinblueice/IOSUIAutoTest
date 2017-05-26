@@ -118,7 +118,7 @@ class MultiClientsBaseTest(object):
                     'autoAcceptAlerts': True if config_model.get('default_capabilities',
                                                                  'auto_accept_alerts') == 'True' else False,
                     'waitForAppScript': config_model.get('default_capabilities', 'wait_for_app_script'),
-                    'webDriverAgentUrl': config_model.get('default_capabilities', 'webDriverAgentUrl')
+                    'webDriverAgentUrl': config_model.get('default_capabilities', 'web_driver_agent_url')
 
                 })
 
