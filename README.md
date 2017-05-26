@@ -61,7 +61,7 @@ brew install ideviceinstaller
             'id=<udid>' test
         ```
         
-     - 若要获取更多详细信息，可执行命令
+        若要获取更多详细信息，可执行命令
     
         ```bash
            xcodebuild build-for-testing test-without-building -project WebDriverAgent.xcodeproj -scheme  
