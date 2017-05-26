@@ -42,13 +42,15 @@ brew install ideviceinstaller
 ## 3. 运行程序
 
  - 非debug模式下直接运行  
-  ```python
-  python  clients_main.py  [-m [module [-f [function]]]] 
-  ```
-  或者为了获取case通过率的xml支持，可运行
-  ```python
-   python  clients_main_nose.py  [-m [module [-f [function]]]] 
-  ```
+ 
+     ```python
+      python  clients_main.py  [-m [module [-f [function]]]] 
+     ```
+     或者为了获取case通过率的xml支持，可运行
+     ```python
+      python  clients_main_nose.py  [-m [module [-f [function]]]] 
+     ```
+     
  - debug模式（需将util/switch.conf的debug置为True）下按以下步骤：
      - 启动appium server
      - 创建appium会话（create session），建议在webdriver创建参数中不加入webDriverAgentUrl
@@ -68,4 +70,5 @@ brew install ideviceinstaller
         ```
 
 若遇到问题，可先重启手机，再重启服务和会话
+
 
