@@ -54,7 +54,7 @@ brew install ideviceinstaller
  - debug模式（需将util/switch.conf的debug置为True）下按以下步骤：
      - 启动appium server
      - 创建appium会话（create session），建议在webdriver创建参数中不加入webDriverAgentUrl
-     - （移动设备系统版本为9.3以上需要）等待appium server log显示与手机进行通信之后，再启动移动设备中的WebDriverAgent， 默认使用8100端口进行通信，命令> 行下启动命令如下
+     - （移动设备系统版本为9.3以上需要）等待appium server log显示与手机进行通信之后，再启动移动设备中的WebDriverAgent， 默认使用8100端口进行通信，命令行下启动命令如下
      
         ```bash
             xcodebuild -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 
